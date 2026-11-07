@@ -1,0 +1,9 @@
+{
+  "subject": "Invoice 8841 is overdue — pay to our new account",
+  "sender": "Billing <billing@vendor-invoices.example>",
+  "reply_to": "payments@vendor-invoices.example",
+  "body": "Our previous bank account was closed. Invoice 8841 for USD 12,480 is now 9 days overdue. Pay immediately using the updated account details or the payment portal. Late payment will pause the contract today.",
+  "links": [
+    "https://pay.vendor-invoices.example/invoice/8841"
+  ]
+}

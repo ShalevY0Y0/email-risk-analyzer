@@ -1,0 +1,9 @@
+{
+  "subject": "URGENT: Your mailbox will be disabled today",
+  "sender": "IT Support <security-alert@account-review.example>",
+  "reply_to": "verify-now@account-review.example",
+  "body": "Your mailbox exceeded its storage limit and will be disabled in 30 minutes. Confirm your password immediately using the secure verification page below. Do not contact the help desk because this automated process cannot be reversed.",
+  "links": [
+    "https://login.example.invalid/verify-account"
+  ]
+}

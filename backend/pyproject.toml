@@ -1,0 +1,21 @@
+[project]
+name = "gmail-addon-backend"
+version = "0.1.0"
+description = "Minimal backend experiment for the Gmail malicious email scorer"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]>=0.120.0,<1.0.0",
+    "openai>=2.0.0,<3.0.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+]
+
+[tool.fastapi]
+entrypoint = "main:app"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]

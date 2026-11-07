@@ -1,0 +1,10 @@
+{
+  "subject": "Last chance: 40% off spring jackets ends tonight",
+  "sender": "Northwind Outfitters <hello@news.northwind-outfitters.example>",
+  "reply_to": "hello@news.northwind-outfitters.example",
+  "body": "Hi there,\n\nOur spring sale ends at midnight. Use code SPRING40 at checkout if you want an extra 40% off jackets you already viewed. This is a marketing message; you can unsubscribe at any time.\n\nThanks,\nThe Northwind team",
+  "links": [
+    "https://shop.northwind-outfitters.example/sale",
+    "https://shop.northwind-outfitters.example/unsubscribe"
+  ]
+}

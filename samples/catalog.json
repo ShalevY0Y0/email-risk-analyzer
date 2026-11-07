@@ -1,0 +1,50 @@
+[
+  {
+    "id": "routine-meeting",
+    "file": "legitimate-email.json",
+    "expected_verdict": "Low risk",
+    "purpose": "Ordinary internal meeting update with matching sender and reply-to."
+  },
+  {
+    "id": "marketing-newsletter",
+    "file": "marketing-newsletter.json",
+    "expected_verdict": "Low risk",
+    "purpose": "Commercial urgency that should not be treated like a security incident."
+  },
+  {
+    "id": "password-reset",
+    "file": "password-reset.json",
+    "expected_verdict": "Suspicious",
+    "purpose": "Expected-looking password reset that still cannot be authenticated from content alone."
+  },
+  {
+    "id": "credential-phishing",
+    "file": "suspicious-email.json",
+    "expected_verdict": "High risk",
+    "purpose": "Urgent credential request plus a verification link and a request not to contact support."
+  },
+  {
+    "id": "bec-payment",
+    "file": "bec-payment.json",
+    "expected_verdict": "High risk",
+    "purpose": "Business email compromise: executive urgency and a changed payment destination."
+  },
+  {
+    "id": "invoice-fraud",
+    "file": "invoice-fraud.json",
+    "expected_verdict": "High risk",
+    "purpose": "Unexpected invoice with a new bank account and payment link."
+  },
+  {
+    "id": "attachment-lure",
+    "file": "attachment-lure.json",
+    "expected_verdict": "Suspicious",
+    "purpose": "Email claims an executable attachment exists; the backend does not receive the file."
+  },
+  {
+    "id": "prompt-injection",
+    "file": "prompt-injection.json",
+    "expected_verdict": "High risk",
+    "purpose": "Phishing content that tries to override the model instructions."
+  }
+]

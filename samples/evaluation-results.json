@@ -1,0 +1,113 @@
+[
+  {
+    "id": "routine-meeting",
+    "expected": "Low risk",
+    "actual": "Low risk",
+    "score": 8,
+    "matched": true,
+    "explanation": "This reads like a routine meeting update and does not request sensitive information or urgent action. The message refers to a shared workspace, but provides no link or other details to assess that reference.",
+    "limitations": [
+      "The sender\u2019s identity and email address were not independently verified.",
+      "The shared workspace and agenda were not provided for review."
+    ],
+    "error": null
+  },
+  {
+    "id": "marketing-newsletter",
+    "expected": "Low risk",
+    "actual": "Low risk",
+    "score": 14,
+    "matched": true,
+    "explanation": "This appears to be a routine promotional email, with a sale offer and an unsubscribe option. The provided details show no obvious request for sensitive information or urgent account action, though they are not enough to verify the sender or links.",
+    "limitations": [
+      "Sender identity and domain authenticity were not verified.",
+      "Links were not opened or checked for reputation or destination behavior.",
+      "No message headers or other authentication details were supplied."
+    ],
+    "error": null
+  },
+  {
+    "id": "password-reset",
+    "expected": "Suspicious",
+    "actual": "Low risk",
+    "score": 16,
+    "matched": false,
+    "explanation": "This looks like a routine password-reset notice: it gives a conditional instruction and explicitly says not to send your password by email. The reset link and sender cannot be verified from the supplied data, so use caution if you did not request the reset.",
+    "limitations": [
+      "The sender\u2019s identity and the link\u2019s destination or legitimacy were not independently verified.",
+      "No context is available on whether the recipient requested a password reset.",
+      "The supplied data does not establish whether the link\u2019s token is genuine or safe."
+    ],
+    "error": null
+  },
+  {
+    "id": "credential-phishing",
+    "expected": "High risk",
+    "actual": "High risk",
+    "score": 94,
+    "matched": true,
+    "explanation": "This email uses urgent threats and asks you to confirm your password through a link, while discouraging you from contacting the help desk. These are strong signs of a credential-stealing attempt.",
+    "limitations": [
+      "The email\u2019s authenticity and sender identity have not been verified.",
+      "The link and its destination were not checked.",
+      "No attachment or additional message context was provided."
+    ],
+    "error": null
+  },
+  {
+    "id": "bec-payment",
+    "expected": "High risk",
+    "actual": "High risk",
+    "score": 96,
+    "matched": true,
+    "explanation": "This message has strong signs of a payment-diversion attempt: it urges a large, urgent wire to a new account while discouraging verification and internal discussion. The reply-to address differs from the sender address, so verify the request through a separate, trusted channel before taking any action.",
+    "limitations": [
+      "The sender\u2019s identity and authority were not independently verified.",
+      "No email headers or authentication results were provided.",
+      "No link or attachment data was supplied; the links list is empty.",
+      "The vendor account details and payment request were not independently checked."
+    ],
+    "error": null
+  },
+  {
+    "id": "invoice-fraud",
+    "expected": "High risk",
+    "actual": "High risk",
+    "score": 79,
+    "matched": true,
+    "explanation": "This message combines an urgent demand for a large overdue payment with a request to use new bank details, a pattern that can indicate payment redirection fraud. The supplied data alone cannot confirm whether the invoice or account-change request is genuine.",
+    "limitations": [
+      "The sender and reply-to addresses have not been independently verified.",
+      "The invoice, account-change request, and payment portal have not been verified.",
+      "No email headers, prior correspondence, or vendor account records were provided."
+    ],
+    "error": null
+  },
+  {
+    "id": "attachment-lure",
+    "expected": "Suspicious",
+    "actual": "High risk",
+    "score": 96,
+    "matched": false,
+    "explanation": "The email asks you to open an executable file presented as a contract and to bypass a computer\u2019s block by enabling editing. Those requests are highly suspicious and could expose your device to harm.",
+    "limitations": [
+      "The email data does not include attachment contents or details about the sender\u2019s identity.",
+      "No links are listed, and no external checks of the sender or file were performed."
+    ],
+    "error": null
+  },
+  {
+    "id": "prompt-injection",
+    "expected": "High risk",
+    "actual": "High risk",
+    "score": 94,
+    "matched": true,
+    "explanation": "The message pressures you to act quickly and asks for your current password through an \u201cemergency login\u201d page, which are strong signs of a credential-stealing attempt. The text that claims to override instructions is part of the email and is not evidence that the sender is trustworthy.",
+    "limitations": [
+      "The sender and domain were not independently verified.",
+      "The link was not opened or checked.",
+      "No attachment or additional message context was provided."
+    ],
+    "error": null
+  }
+]

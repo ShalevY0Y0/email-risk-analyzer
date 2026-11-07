@@ -1,0 +1,7 @@
+{
+  "subject": "Need this wire sent before the audit call",
+  "sender": "Dana Cohen, CEO <dana.cohen@example.org>",
+  "reply_to": "dana.cohen.payments@secure-mail-example.net",
+  "body": "I'm in back-to-back meetings and cannot take a call. Please send the remaining EUR 48,750 to the new vendor account below before 11:00. Do not mention this in the finance Slack channel; the vendor asked that we keep the change confidential until after the audit.\n\nBank: Contoso Private\nIBAN: DE00 ACCT-000021\nReference: Audit retainer",
+  "links": []
+}
